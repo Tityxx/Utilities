@@ -1,0 +1,15 @@
+{
+  "name": "com.tityx.utilities",
+  "version": "1.0.0",
+  "displayName": "Utilities",
+  "description": "Some utilities functions for faster development",
+  "unity": "2019.1",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "author": {
+    "name": "Tityx",
+    "email": "syhodyb99@gmail.com",
+    "url": "https://github.com/Tityxx"
+  }
+}
