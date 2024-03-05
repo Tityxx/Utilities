@@ -206,8 +206,13 @@ namespace Tityx.Utilities
             equationList.RemoveAt(equationList.Count - 1);
 
             string eq = string.Format(string.Join("", equationList), prms.ToArray());
+#if UNITY_2022_3_OR_NEWER
             if (!ExpressionEvaluator.Evaluate(equation, out float result))
                 return false;
+#else
+            if (!float.TryParse(new System.Data.DataTable().Compute(equation, "").ToString(), out float result))
+                return false;
+#endif
 
             return result.ToString() == answer;
         }
